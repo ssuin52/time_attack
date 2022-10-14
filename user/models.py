@@ -8,4 +8,4 @@ class UserModel(AbstractUser):
     class Meta:
         db_table = 'User'
     phone = PhoneNumberField()
-    address = models.CharField(max_length=256)
+    address = models.TextField(max_length=256)
